@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Roller</title>
+    <link rel="stylesheet" href="./assets/stylesheet/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Dice Rolls!</h1>
+      <h6>
+        Note: Dice rolls can only be up to 10 times. <br />
+        <p>Sides of even numbers are allow upto 20 sides</p>
+      </h6>
+      <div id="first">
+        <div>
+          <label for="numRoll">Enter number of rolls:</label>
+          <input type="text" id="numRoll" placeholder="Dice Rolls" />
+          <label for="rollSides">Enter dice sides</label>
+          <input
+            type="number"
+            id="rollSides"
+            placeholder="Dice Sides"
+            min="4"
+            max="20"
+            step="2"
+          />
+          <button id="rollButton" type="submit">Roll!</button>
+        </div>
+        <p>Total:<span id="total"></span></p>
+        <div>
+          <button id="showAll" type="submit">Show All Rolls</button>
+          <button id="reset" type="reset">Reset</button>
+          <ol id="allRolls"></ol>
+        </div>
+        <div id="diceShapes"></div>
+      </div>
+    </main>
+    <script src="./assets/javascript/main.js"></script>
+  </body>
+</html>
